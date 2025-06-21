@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Excel Project</title>
+  </head>
+  <body>
+    <div class="header-area">
+      <div class="menu-bar">
+        <div class="font-area">
+          <div class="font-selection-area">
+            <div class="font-family-area">
+              <select class="font-family-input">
+                <option value="arial" selected>Arial</option>
+                <option value="georgia">Georgia</option>
+                <option value="tahoma">Tahoma</option>
+                <option value="verdana">Verdana</option>
+                <option value="calibri">Calibri</option>
+                <option value="trebuchet-ms">Trebuchet MS</option>
+                <option value="lucida-console">Lucida Console</option>
+                <option value="times-new-roman">Times New Roman</option>
+                <option value="monaco">Monaco</option>
+                <option value="courier">Courier</option>
+                <option value="arial-black">Arial Black</option>
+                <option value="arial-narrow">Arial Narrow</option>
+                <option value="arial-rounded">Arial Rounded</option>
+                <option value="bookman-old-style">Bookman Old Style</option>
+                <option value="courier-new">Courier New</option>
+                <option value="impact">Impact</option>
+                <option value="comic-sans-ms">Comic Sans MS</option>
+                <option value="helvetica">Helvetica</option>
+              </select>
+            </div>
+            <div class="font-size-area">
+              <select class="font-size-input">
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16" selected>16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="32">32</option>
+                <option value="34">34</option>
+              </select>
+            </div>
+          </div>
+          <div class="font-style-area">
+            <button class="bold-btn">B</button>
+            <button class="italic-btn">I</button>
+            <button class="underline-btn">U</button>
+          </div>
+        </div>
+        <div class="font-alignment-area">
+          <div class="alignment-container">
+            <button class="left">L</button>
+            <button class="center">C</button>
+            <button class="right">R</button>
+          </div>
+        </div>
+        <div class="operation-area"></div>
+      </div>
+      <div class="formula-area">
+        <input type="text" class="display-selected-cell" />
+        <input type="text" class="formula-bar" />
+      </div>
+    </div>
+    <div class="grid_container">
+      <div class="top_left_cell"></div>
+      <div class="top_row"></div>
+      <div class="left_col"></div>
+      <div class="grid">
+        <!-- 2d grid build  -->
+      </div>
+    </div>
+    <div class="sheets_container">
+      <div class="sheets-list">
+        <div class="sheet active-sheet" sheetIdx="0">Sheet 1</div>
+      </div>
+      <div class="add-sheet_container">
+        <button class="add-sheet-btn">+</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
